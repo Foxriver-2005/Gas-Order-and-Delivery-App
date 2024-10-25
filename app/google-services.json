@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "612596449337",
+    "firebase_url": "https://flogas-37f28-default-rtdb.firebaseio.com",
+    "project_id": "flogas-37f28",
+    "storage_bucket": "flogas-37f28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612596449337:android:8e34063e8be75b00cc8de8",
+        "android_client_info": {
+          "package_name": "com.lelei.b_r_gas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABjtt_uraQADTwXcfls6SMSwWTH47vw_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

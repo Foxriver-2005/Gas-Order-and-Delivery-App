@@ -1,0 +1,205 @@
+<resources>
+    <string name="app_name">Flo Gas</string>
+
+    <!-- Splash Screen  -->
+    <string name="connecting_to_server">Connecting To Server…</string>
+    <string name="connection_established">Connection Established.</string>
+    <string name="logging_in">Logging In…</string>
+
+    <!-- Welcome Screen -->
+    <string name="welcome">Welcome To Flo Gas</string>
+    <string name="next">Next</string>
+    <string name="start">Lets get Started</string>
+
+    <string name="skip">Skip</string>
+    <string name="signup">SignUp</string>
+
+    <!-- Login  -->
+    <string name="headline1">Flo Gas</string>
+    <string name="headline_log_in">Log in</string>
+    <string name="headline3">with your E-Mail</string>
+
+    <string name="login_with_e_mail">Login with E-Mail</string>
+    <string name="login_with_phone">Login with Phone</string>
+    <string name="email"> Enter Your E-mail</string>
+    <string name="email_phone"> E-mail/Phone Number</string>
+    <string name="enter_pass"> Password</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="delivery_login">Delivery Login</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password ?</string>
+
+    <!--  Sign-Up Profile  -->
+    <string name="profile">Profile</string>
+    <string name="enter_name">Enter Your Name</string>
+    <string name="re_enter_pass"> Re-Enter Password</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+
+    <!--  Navigation Drawer -->
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Flo Gas</string>
+    <string name="nav_header_subtitle">Fox</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--  Navigation Drawer Menus -->
+    <string name="menu_home">Menu</string>
+    <string name="menu_your_orders">Your Orders</string>
+    <string name="menu_cart">Your Cart</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_log_out">Log Out</string>
+    <string name="login">Log In</string>
+    <string name="refresh">Refresh</string>
+    <string name="send_notification">Send Notification</string>
+    <string name="add_shipper">Add Shipper</string>
+    <string name="shippers">Shippers</string>
+
+    <string name="login_with_verification_code">Login with verification code</string>
+    <string name="enter_otp">Verification Code</string>
+
+    <string name="no_internet">No Internet Connection</string>
+    <string name="enter_your_address">Enter Your Address</string>
+    <string name="comment">Comment</string>
+    <string name="order_details">Order Details</string>
+    <string name="save_this_address_for_future_orders">Save this Address for future Orders</string>
+    <string name="change_password">Change Password</string>
+    <string name="edit_address">Edit Your Address</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="check_for_updates">Check for Updates</string>
+
+    <string name="street_address">Street Address</string>
+    <string name="line1">Flat / House No. / Floor / Building</string>
+    <string name="line2">Colony / Street / Locality</string>
+    <string name="eg_landmark">Eg. Near Tamal Hostel</string>
+    <string name="pincode">6 digits [0-9] pincode</string>
+    <string name="address_city">Nairobi</string>
+    <string name="state">Nyeri</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="delivered">Delivered</string>
+    <string name="cancel_order">Cancel Order</string>
+
+    <string name="view_order_details">View Order Details</string>
+    <string name="product_details">Product Details</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="order_total">Order Total</string>
+    <string name="order_date">Order Date</string>
+    <string name="order_time">Order Time</string>
+    <string name="order_status">Order Status</string>
+    <string name="view_reason">View Reason</string>
+    <string name="place_order">Place Order</string>
+
+    <string name="payment_info">Payment Info</string>
+    <string name="payment_method">Payment Method</string>
+
+    <string name="contributors">Support</string>
+    <string name="gautham">Fox</string>
+    <string name="founder_designer">Developer/Designer</string>
+    <string name="jebastin">Fox</string>
+    <string name="adhi">Fox</string>
+    <string name="developer">Developer</string>
+    <string name="notifications">Notifications</string>
+    <string name="subscribe_news">Subscribe News</string>
+    <string name="view_placed_order">View Placed Order</string>
+    <string name="view_delivered_order">View Delivered Order</string>
+    <string name="view_rejected_order">View Rejected Order</string>
+    <string name="search_order">Search Orders</string>
+
+    <!-- Delivery Strings -->
+    <string name="title_home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="view_picked_order">View Picked Order</string>
+    <string name="logout">LogOut</string>
+
+    <string name="edit">Edit</string>
+    <string name="remove">Remove</string>
+    <string name="direction">Direction</string>
+    <string name="details">Details</string>
+
+    <!-- Admin Strings -->
+    <string name="enter_sweet_name">Item Name</string>
+    <string name="select">Select Image</string>
+    <string name="upload">Upload</string>
+    <string name="sweet_description">Item Description</string>
+    <string name="discount">Discount</string>
+    <string name="enter_price">Price</string>
+    <string name="title_activity_tracking_order">TrackingOrder</string>
+
+    <string name="available_quantity">Available Quantity</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_user_name">Enter User Name</string>
+    <string name="enter_shipper_phone_number">Enter Shipper Phone Number e.g 790...</string>
+    <string name="enter_shipper_name">Enter Shipper Name</string>
+    <string name="enter_shipper_email">Enter Shipper Email</string>
+    <string name="enter_shipper_password">Enter Shipper Password</string>
+    <string name="update">Update</string>
+    <string name="update_available">Update Available</string>
+    <string name="update_description">Update To Latest Version To Avoid Crash or any Other Inconvenience</string>
+    <string name="enter_reason">Enter Reason</string>
+    <string name="cancel">Cancel</string>
+    <string name="reject">Reject</string>
+    <string name="nav_soldItems">Sold Items</string>
+    <string name="select_date">Select Date</string>
+    <string name="not_available">Record Not Available</string>
+    <string name="view_report_details">View Report Details</string>
+    <string name="sold_product">Sold Product</string>
+    <string name="placed_order">Placed Order</string>
+
+    <string name="delete">Delete</string>
+
+    <string name="change_address">Change Address</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="pay_with">Pay With</string>
+    <string name="pay_on_delivery">Pay with Mpesa</string>
+    <string name="user_name">Deliver To</string>
+    <string name="order_id">Order ID</string>
+    <string name="home">Home</string>
+    <string name="your_order_is_under_process">Your Order is under Process waiting for Confirmation from Server</string>
+
+    <string name="back">Back</string>
+    <string name="rupee">Ksh</string>
+    <string name="order_placed">Order Placed</string>
+
+    <string name="info">Info</string>
+    <string name="name">Name</string>
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="summary_noti">Receive Notifications for new Items &amp; Discounts</string>
+    <string name="summary_change_pass">Verify To Change Password</string>
+
+    <string name="your_address">Your Address</string>
+
+    <string name="delete_address">Delete Address</string>
+    <string name="enter_new_address">Enter New Address</string>
+
+    <string name="payment_summary">Payment Summary</string>
+    <string name="items">Items:</string>
+    <string name="packaging">Packaging:</string>
+    <string name="delivery_charge">Delivery Charge:</string>
+
+    <string name="view_monthly_report">View Monthly Report</string>
+
+    <string name="feedback">Feedback</string>
+    <string name="flags">Flags</string>
+    <string name="latest_version">Latest Version</string>
+    <string name="make_orders">Make Orders</string>
+    <string name="make_no_orders_reason">Reason</string>
+    <string name="mandatory_update">Mandatory Update</string>
+    <string name="splash_update_check">Splash Update Check</string>
+    <string name="_true">True</string>
+    <string name="_false">False</string>
+
+    <string name="great">Great</string>
+    <string name="good">Good</string>
+    <string name="neutral">Neutral</string>
+    <string name="bad">Bad</string>
+    <string name="very_bad">VeryBad</string>
+    <string name="submit">Submit</string>
+
+    <string name="dont_show_again">Don\'t Show Again</string>
+
+    <string name="go_to_picked">Go To Picked Order</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="24dp"
+        android:padding="12dp"
+        android:background="@drawable/border_shadow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="HELP"
+            android:textColor="@color/material_blue_grey_80"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:id="@+id/txtHelp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWelcomeHeade"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:text="Welcome user"
+            android:textSize="20sp"
+            android:layout_below="@+id/txtHelp"
+            android:textStyle="italic"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtwelcomeMsg"
+            android:layout_below="@+id/txtWelcomeHeade"
+            android:layout_marginTop="10dp"
+            android:text="First of all, on behalf on our organization and entire corporation I take this opportunity to say we are happy and pleased that you choose to use our services. It is our hope that you enjoy your stay in this app. Enjoy."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtHelpHead"
+            android:layout_below="@+id/txtwelcomeMsg"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="HOW TO USE THE APP"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scView"
+            android:layout_below="@id/txtHelpHead">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHelpHead"
+            android:layout_marginTop="15dp"
+            android:text="1. Register using phone number and valid email, you should start phone number with 7 (no Proceeding zero)\n\n 2. Login to the app using either phone number or the email. \n\n 3. The fisrt page after login is the home page which displays all available products. \n\n 4. Click on the image of the item you are interested in, to see it's price and desciption. \n\n 5. If you are interested in the product, click the cart icon for the item to be added to the cart. \n\n 6. Alternatively you can Buy the item direct without having to add it to the cart by just simply pressing BUY NOW button. \n\n 7. AFter pressing Buy Now button you will see a dialog titled FIND PLACES, from there search the nearest landmark to where you want your product to be delivered to. \n\n 8. Next you will  a payment page showing details of the items you have added to the cart, and there is a editable view where you will enter your mpesa number which is the paying number. \n\n 9. After successful payment, congrats you have successfuly placed your order, now you can to (Your Order) which you will by pressing three lines located at left most top of the home, to see the status of your order. \n\n 10. If you encounter any other issue and feel like you need more clarrification, feel free to contact us by going to the settings then (Contact Us)"
+            android:textColor="@color/quantum_black_text"/>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

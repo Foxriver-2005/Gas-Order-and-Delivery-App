@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/make_no_order_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:padding="6dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/no_internet_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:text="@string/no_internet"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_menu_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/make_no_order_reason"
+            android:scrollbars="vertical"/>
+
+        <com.andremion.counterfab.CounterFab
+            android:id="@+id/btn_cart_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shopping_cart"
+            android:backgroundTint="@color/colorBackground"
+            android:layout_alignParentBottom="true"
+            app:badgeBackgroundColor="@color/bgRowBackground"
+            app:badgeTextColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/fab_margin" />
+
+    </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

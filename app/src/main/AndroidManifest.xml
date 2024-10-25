@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lelei.b_r_gas">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        tools:replace="android:icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:theme="@style/AppTheme">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"/>
+        </provider>
+
+        <activity
+            android:name=".user.navigation_drawer.settings_user.SettingsActivity"
+            android:label="@string/title_activity_settings"/>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.libraries.places.widget.Autocomplete.API_KEY_PLACES"
+            android:value="AIzaSyAhziR4XoP230Obef_f3WC_4b4Dyqf_ldY"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/gmaps_key" /> <!-- Start of Delivery Activities -->
+        <activity android:name=".common.TrackingOrder" />
+        <activity android:name=".delivery.DashboardDelivery" />
+        <activity android:name=".login.DeliveryLogin" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".delivery.ui.home.OrderPicked" />
+        <activity android:name=".delivery.ui.home.OrderDelivered" />
+        <activity android:name=".delivery.ui.home.OrderPlaced" />
+        <activity android:name=".delivery.ui.home.OrderRejected" />
+        <activity android:name=".delivery.OrderDetailDelivery" /> <!-- End of Delivery Activities -->
+
+        <!-- Start of Admin Activities -->
+        <activity android:name=".admin.DashboardAdmin" />
+        <activity android:name=".login.LoginAdmin" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".admin.OrderDeliveredAdmin" />
+        <activity android:name=".admin.OrderPlacedAdmin" />
+        <activity android:name=".admin.OrderRejectedAdmin" />
+        <activity android:name=".admin.OrderDetailAdmin" />
+        <activity android:name=".admin.RejectOrderReason" />
+        <activity android:name=".admin.navigation_drawer.home.UpdateItems" />
+        <activity android:name=".admin.OrderSearchAdmin" />
+        <activity android:name=".admin.ViewSoldItems"/>
+        <activity android:name=".admin.SoldItemsMonthly"/>
+        <!-- End of Admin Activities -->
+
+        <!-- Start of User Activities -->
+        <activity android:name=".user.DashboardUser" />
+        <activity android:name=".common.ItemsDetail" />
+        <activity android:name=".user.PlaceOrder" />
+        <activity android:name=".user.navigation_drawer.order_user.OrderDelivered" />
+        <activity android:name=".user.navigation_drawer.order_user.OrderRejected" />
+        <activity android:name=".user.navigation_drawer.order_user.OrderPlaced" />
+        <activity android:name=".user.navigation_drawer.order_user.OrderDetail" />
+        <activity android:name=".user.OrderPlaceStatus" />
+        <activity android:name=".user.FeedbackActivity"/>
+        <!-- End of User Activities -->
+
+        <!-- Start of Common Activities -->
+        <activity android:name=".login.Login" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".common.MainActivity" />
+        <activity android:name=".common.SignUp" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".common.UpdateActivity"/>
+        <activity android:name=".common.Credits"/>
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".Service.FirebaseMessagingServiceCustom"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
